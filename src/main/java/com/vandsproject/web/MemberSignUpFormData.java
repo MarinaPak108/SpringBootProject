@@ -1,15 +1,17 @@
 package com.vandsproject.web;
 
+import com.vandsproject.validation.ValidPassword;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class MemberSignUpFormData {
     @NotNull
-    @Size(min = 3, max = 255)
+    @Size(min = 3, max = 255, message = "Login should have between 3 to 255 characters.")
     private String login;
 
     @NotNull
-    @Size (min=3, max = 255)
+    @ValidPassword
     private String password;
 
     public MemberSignUpFormData() {

@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
+
 @RestController
 public class UserController {
     private final MemberService service;
@@ -30,7 +33,7 @@ public class UserController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<?> register(@RequestBody MemberSignUpFormData formdata){
+    public ResponseEntity<?> register(@Valid @RequestBody MemberSignUpFormData formdata){
         MemberSignUpParam param = formdata.toParameters();
         if(service.checkMember(param.getLogin())){
             return new ResponseEntity<>("Member with login "+ param.getLogin() + " already exists!",
