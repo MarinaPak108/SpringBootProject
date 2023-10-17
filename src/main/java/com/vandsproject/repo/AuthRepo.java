@@ -8,4 +8,6 @@ import java.util.List;
 public interface AuthRepo extends JpaRepository <AuthEntity, Integer> {
     @Override
     List<AuthEntity> findAll();
+
+    AuthEntity getAuthEntityByName (String name);
 }
