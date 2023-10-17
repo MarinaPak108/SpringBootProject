@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28c1de4a-de2f-4ab7-b272-e674d7d1de5d" name="Changes" comment="security">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="28c1de4a-de2f-4ab7-b272-e674d7d1de5d" name="Changes" comment="second commit (security)">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vandsproject/config/CustomAuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vandsproject/config/CustomAuthProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vandsproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vandsproject/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,6 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -82,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696396719808</updated>
       <workItem from="1696396721312" duration="18229000" />
-      <workItem from="1697427390214" duration="10193000" />
+      <workItem from="1697427390214" duration="9662000" />
     </task>
     <task id="LOCAL-00001" summary="first commit (connection check)">
       <created>1696396869677</created>
@@ -98,14 +98,7 @@
       <option name="project" value="LOCAL" />
       <updated>1697447231519</updated>
     </task>
-    <task id="LOCAL-00003" summary="security">
-      <created>1697509301953</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1697509301953</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,8 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit (connection check)" />
     <MESSAGE value="second commit (security)" />
-    <MESSAGE value="security" />
-    <option name="LAST_COMMIT_MESSAGE" value="security" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit (security)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
