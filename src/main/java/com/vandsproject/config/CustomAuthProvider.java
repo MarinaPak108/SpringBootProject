@@ -35,9 +35,8 @@ public class CustomAuthProvider  implements AuthenticationProvider {
         // use the credentials
         // and authenticate against the third-party system
         if(password.matches(member.getMemberpassword())){
-            Authentication tok = new UsernamePasswordAuthenticationToken(
+            return new UsernamePasswordAuthenticationToken(
                     login, password, getAuth(member.getMemberrole()));
-            return tok;
         } else {
             throw new BadCredentialsException("Invalid data");
         }
